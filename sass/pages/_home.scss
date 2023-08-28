@@ -1,0 +1,243 @@
+@use "../components/buttons" as *;
+
+@use "../abstracts/variables" as *;
+
+/* header */
+@use "../layout/header" as *;
+@use "../layout/events" as *;
+
+
+.parallax{
+    background-image: url("../../images/img2.avif");
+    min-height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    opacity: 0.77;
+    color: $text-color;
+    justify-content: space-around;
+    align-items: last baseline;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+  }
+  
+  @property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+  }
+
+  :root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+    --c3:rgba(5,58,117,1) ;
+}
+
+.box1 {
+    width: 400px;
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+    p{
+        font-size: 25px;
+    }
+}
+
+.box2 {
+    width: 800px;
+    line-height: 30px;
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+    p{
+        font-size: 20px;
+    }
+}
+
+.box1:hover, .box2:hover{
+    border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
+    color: var(--c1);
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.wrapper {
+    box-shadow: 1px 1px 40px $blue-color inset;
+    width: 90%;
+    margin: 20px 5%;
+    text-align: center;
+    padding: 40px;
+    font-family: $font-roboto;
+    line-height: 30px;
+    h1{
+        line-height: 70px;
+        font-weight: bolder;
+        color: $blue-color;
+        font-size: 45px;
+    }
+    h5{
+        margin-top: 10px;
+        margin-left: 30px;
+        color: $gray-color;
+        font-size: 20px;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 40px;
+    }
+    .btn1{
+        margin-top: 30px;
+      }
+    
+  }
+
+  @media (max-width:700px) {
+    .wrapper{
+      h1{
+        line-height: 50px;
+        font-weight: bolder;
+        color: $blue-color;
+        font-size: 35px;
+    }
+    h5{
+        margin-top: 10px;
+        margin-left: 30px;
+        color: $gray-color;
+        font-size: 20px;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 25px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 35px;
+    }
+    }
+  }
+
+  .wrapper:hover{
+    box-shadow: 1px 1px 10px $blue-color;
+  }
+  
+  
+  .btn2 {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 99;
+  }
+  
+  .btn2:hover {
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+// .anim1::before{
+//     animation: anim 30s infinite;
+// 	background: $blue-grad1-color;
+// 	border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+// 	content: "";
+// 	height: 30vmin;
+// 	position: absolute;
+// 	width: 30vmin;
+//     top: 530px;
+//     left: 45%;
+//     z-index: 11;
+// }
+
+// @keyframes anim {
+// 	0%,
+// 	100% {
+// 		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+// 	}
+
+// 	10% {
+// 		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+// 	}
+
+// 	20% {
+// 		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+// 	}
+
+// 	30% {
+// 		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+// 	}
+
+// 	40% {
+// 		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+// 	}
+
+// 	50% {
+// 		border-radius: 100%;
+// 	}
+
+// 	60% {
+// 		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+// 	}
+
+// 	70% {
+// 		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+// 	}
+
+// 	80% {
+// 		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+// 	}
+
+// 	90% {
+// 		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+// 	}
+// }

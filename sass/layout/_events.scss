@@ -1,0 +1,110 @@
+@use "../abstracts/variables" as *;
+
+.events{
+    margin: 5%;
+    .h1{
+        font-weight: bolder;
+        color: $blue-color;
+        font-size: 35px;
+        margin-bottom: 40px;
+        font-family: $font-roboto;
+    }
+    .event{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    .img1{
+        width: 400px;
+        height: 400px;
+    }
+        .event1 {
+    --c:rgb(5,58,117); /* the border color */
+    --b: 5px;    /* the border thickness*/
+    --g: 5px;     /* the gap on hover */
+    padding: 30px;
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+    .h1{
+        line-height: 50px;
+        font-weight: bolder;
+        color: $blue-color;
+        font-size: 35px;
+    }
+    .h5{
+        margin-top: 10px;
+        margin-left: 30px;
+        color: $gray-color;
+        font-size: 20px;
+    }
+    .p{
+        margin-top: 20px;
+        font-size: 25px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 40px;
+    }
+    .btn1{
+        margin-top: 60px;
+    }
+  }
+  .event1:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+  }
+
+}
+}
+
+@media (max-width:800px) {
+    .events{
+        .event{
+            .img1{
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .events{
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        .event{
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            .img1{
+                width: 300px;
+                height: 300px;
+            }
+            .event1{
+                margin-left: 10px;
+                .h1{
+                    line-height: 40px;
+                    font-size: 30px;
+                }
+                .h5{
+                    margin-top: 10px;
+                    margin-left: 30px;
+                    font-size: 20px;
+                }
+                .p{
+                    margin-top: 20px;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+                .btn1{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    
+}

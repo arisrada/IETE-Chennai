@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+
+footer{
+    padding: 30px;
+    height: 50vh;
+    width: 100%;
+    background: rgb(128,128,128);
+    background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(180,190,238,1) 53%, rgba(128,128,128,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer:hover{
+    background: rgb(128,128,128);
+background: linear-gradient(90deg, rgba(128,128,128,1) 0%, rgba(180,190,238,1) 53%, rgba(128,128,128,1) 100%);
+}
+
+.copy-rights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+

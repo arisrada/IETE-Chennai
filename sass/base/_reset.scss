@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: $text-color;
+    text-decoration: none;
+}
+
+a:hover, .active{
+    color: $gray-color;
+}

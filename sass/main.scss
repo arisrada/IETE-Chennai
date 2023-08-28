@@ -1,0 +1,9 @@
+/* reset */
+@use "./base/reset";
+
+/* layout */
+@use "./layout/header";
+@use "./layout/footer";
+
+/* pages */
+@use "./pages/home";
