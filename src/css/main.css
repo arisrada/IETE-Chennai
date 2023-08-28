@@ -13,7 +13,11 @@ a {
 }
 
 a:hover, .active {
-  color: gray;
+  color: #BFB182;
+}
+
+body {
+  background-color: #25213C;
 }
 
 /* buttons */
@@ -23,7 +27,7 @@ a:hover, .active {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  background: rgb(5, 58, 117);
+  background: #25213C;
   background: linear-gradient(90deg, rgb(5, 58, 117) 4%, rgb(25, 116, 173) 100%);
   border: none;
   border-radius: 160px;
@@ -37,7 +41,7 @@ a:hover, .active {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  background: rgb(5, 58, 117);
+  background: #25213C;
   border: none;
   border-radius: 160px;
   color: white;
@@ -49,11 +53,11 @@ a:hover, .active {
   margin-top: 30px;
   position: relative;
   padding: 12px 35px;
-  background: linear-gradient(90deg, rgb(25, 116, 173) 4%, rgb(5, 58, 117) 100%);
+  background: #25213C;
   font-size: 17px;
-  font-weight: 500;
-  color: white;
-  border: 3px solid rgb(5, 58, 117);
+  font-weight: 800;
+  color: #BFB182;
+  border: 3px solid #25213C;
   border-radius: 8px;
   box-shadow: 0 0 0 rgba(254, 193, 149, 0.5490196078);
   transition: all 0.3s ease-in-out;
@@ -65,7 +69,7 @@ a:hover, .active {
   left: 20%;
   width: 25px;
   height: auto;
-  filter: drop-shadow(0 0 0 rgb(5, 58, 117));
+  filter: drop-shadow(0 0 0 #25213C);
   z-index: -5;
   transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
 }
@@ -75,7 +79,7 @@ a:hover, .active {
   left: 45%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 0 rgb(5, 58, 117));
+  filter: drop-shadow(0 0 0 #25213C);
   z-index: -5;
   transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -85,7 +89,7 @@ a:hover, .active {
   left: 40%;
   width: 5px;
   height: auto;
-  filter: drop-shadow(0 0 0 rgb(5, 58, 117));
+  filter: drop-shadow(0 0 0 #25213C);
   z-index: -5;
   transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -95,7 +99,7 @@ a:hover, .active {
   left: 40%;
   width: 8px;
   height: auto;
-  filter: drop-shadow(0 0 0 rgb(5, 58, 117));
+  filter: drop-shadow(0 0 0 #25213C);
   z-index: -5;
   transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -105,7 +109,7 @@ a:hover, .active {
   left: 45%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 0 rgb(5, 58, 117));
+  filter: drop-shadow(0 0 0 #25213C);
   z-index: -5;
   transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -115,18 +119,19 @@ a:hover, .active {
   left: 50%;
   width: 5px;
   height: auto;
-  filter: drop-shadow(0 0 0 rgb(5, 58, 117));
+  filter: drop-shadow(0 0 0 #25213C);
   z-index: -5;
   transition: all 0.8s ease;
 }
 .btn-star .fil0 {
-  fill: #FEC195;
+  fill: #bd9204;
 }
 
 .btn-star:hover {
   background: transparent;
-  color: rgb(5, 58, 117);
+  color: #25213C;
   font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 .btn-star:hover .star-1 {
   position: absolute;
@@ -188,7 +193,7 @@ a:hover, .active {
 .header {
   align-items: center;
   text-align: center;
-  background-color: rgb(5, 58, 117);
+  background-color: #25213C;
   padding: 20px 10px;
   display: flex;
   justify-content: space-between;
@@ -215,7 +220,7 @@ a:hover, .active {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(5, 58, 117);
+  background-color: #25213C;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -255,7 +260,7 @@ a:hover, .active {
 }
 .events .h1 {
   font-weight: bolder;
-  color: rgb(5, 58, 117);
+  color: #25213C;
   font-size: 35px;
   margin-bottom: 40px;
   font-family: "Roboto", sans-serif;
@@ -270,7 +275,7 @@ a:hover, .active {
   height: 400px;
 }
 .events .event .event1 {
-  --c:rgb(5,58,117); /* the border color */
+  --c:#BFB182; /* the border color */
   --b: 5px; /* the border thickness*/
   --g: 5px; /* the gap on hover */
   padding: 30px;
@@ -282,13 +287,13 @@ a:hover, .active {
 .events .event .event1 .h1 {
   line-height: 50px;
   font-weight: bolder;
-  color: rgb(5, 58, 117);
+  color: #25213C;
   font-size: 35px;
 }
 .events .event .event1 .h5 {
   margin-top: 10px;
   margin-left: 30px;
-  color: gray;
+  color: #BFB182;
   font-size: 20px;
 }
 .events .event .event1 .p {
@@ -427,9 +432,9 @@ footer:hover {
   --angle: 90deg;
   --gradX: 100%;
   --gradY: 50%;
-  --c1: rgba(168, 239, 255, 1);
+  --c1: #BFB182;
   --c2: rgba(168, 239, 255, 0.1);
-  --c3:rgba(5,58,117,1) ;
+  --c3:#25213C;
 }
 
 .box1 {
@@ -495,24 +500,26 @@ footer:hover {
   }
 }
 .wrapper {
-  box-shadow: 1px 1px 40px rgb(5, 58, 117) inset;
+  box-shadow: 1px 1px 100px #bd9204 inset;
   width: 90%;
   margin: 20px 5%;
   text-align: center;
+  border-radius: 10px;
   padding: 40px;
   font-family: "Roboto", sans-serif;
+  background-color: white;
   line-height: 30px;
 }
 .wrapper h1 {
   line-height: 70px;
   font-weight: bolder;
-  color: rgb(5, 58, 117);
+  color: #25213C;
   font-size: 45px;
 }
 .wrapper h5 {
   margin-top: 10px;
   margin-left: 30px;
-  color: gray;
+  color: #BFB182;
   font-size: 20px;
 }
 .wrapper p {
@@ -529,13 +536,13 @@ footer:hover {
   .wrapper h1 {
     line-height: 50px;
     font-weight: bolder;
-    color: rgb(5, 58, 117);
+    color: #25213C;
     font-size: 35px;
   }
   .wrapper h5 {
     margin-top: 10px;
     margin-left: 30px;
-    color: gray;
+    color: #BFB182;
     font-size: 20px;
   }
   .wrapper p {
@@ -546,7 +553,7 @@ footer:hover {
   }
 }
 .wrapper:hover {
-  box-shadow: 1px 1px 10px rgb(5, 58, 117);
+  box-shadow: 1px 1px 10px #bd9204;
 }
 
 .btn2 {

@@ -55,9 +55,11 @@
 	--angle: 90deg;
 	--gradX: 100%;
 	--gradY: 50%;
-	--c1: rgba(168, 239, 255, 1);
+	--c1: #BFB182;
+	// --c1: rgba(168, 239, 255, 1);
 	--c2: rgba(168, 239, 255, 0.1);
-    --c3:rgba(5,58,117,1) ;
+    --c3:#25213C;
+    // --c3:rgba(5,58,117,1) ;
 }
 
 .box1 {
@@ -122,12 +124,14 @@
 }
 
 .wrapper {
-    box-shadow: 1px 1px 40px $blue-color inset;
+    box-shadow: 1px 1px 100px $yellow-color inset;
     width: 90%;
     margin: 20px 5%;
     text-align: center;
+    border-radius: 10px;
     padding: 40px;
     font-family: $font-roboto;
+    background-color: $text-color;
     line-height: 30px;
     h1{
         line-height: 70px;
@@ -177,7 +181,7 @@
   }
 
   .wrapper:hover{
-    box-shadow: 1px 1px 10px $blue-color;
+    box-shadow: 1px 1px 10px $yellow-color;
   }
   
   

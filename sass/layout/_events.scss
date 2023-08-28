@@ -18,7 +18,8 @@
         height: 400px;
     }
         .event1 {
-    --c:rgb(5,58,117); /* the border color */
+    // --c:rgb(5,58,117); /* the border color */
+    --c:#BFB182; /* the border color */
     --b: 5px;    /* the border thickness*/
     --g: 5px;     /* the gap on hover */
     padding: 30px;

@@ -32,10 +32,10 @@
   margin-top: 30px;
   position: relative;
   padding: 12px 35px;
-  background: $blue-grad1-color;
+  background: $blue-color;
   font-size: 17px;
-  font-weight: 500;
-  color: $text-color;
+  font-weight: 800;
+  color: $gray-color;
   border: 3px solid $blue-color;
   border-radius: 8px;
   box-shadow: 0 0 0 #fec1958c;
@@ -114,6 +114,7 @@
     color: $blue-color;
     // box-shadow: 0 0 25px $blue-color;
     font-family: $font-roboto;
+    font-weight: 900;
   }
   
 @mixin btn-hover-star-1 {
@@ -178,5 +179,5 @@
   
 @mixin fil0 {
     // fill: $blue-color;
-    fill: #FEC195;
+    fill: $yellow-color;
   }
