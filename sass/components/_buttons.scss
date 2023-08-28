@@ -8,3 +8,64 @@
 .btn1:hover{
     @include btn-hover;
 }
+
+.btn-star{
+    @include btn-star;
+    .star-1{
+        @include star-1;
+    }
+    
+    .star-2{
+        @include star-2;
+    }
+    
+    .star-3{
+        @include star-3;
+    }
+    
+    .star-4{
+        @include star-4;
+    }
+    
+    .star-5{
+        @include star-5;
+    }
+    
+    .star-6{
+        @include star-6;
+    }
+
+    .fil0{
+        @include fil0;
+    }
+}
+.btn-star:hover{
+    @include btn-star-hover;
+    .star-1{
+        @include btn-hover-star-1;
+    }
+    
+    .star-2{
+        @include btn-hover-star-2;
+    }
+    
+    .star-3{
+        @include btn-hover-star-3;
+    }
+    
+    .star-4{
+        @include btn-hover-star-4;
+    }
+    
+    .star-5{
+        @include btn-hover-star-5;
+    }
+    
+    .star-6{
+        @include btn-hover-star-6;
+    }
+}
+
+
+
+
