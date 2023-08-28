@@ -266,8 +266,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .events .event {
+  box-shadow: 1px 1px 10px #BFB182;
+  padding: 20px;
+  border-radius: 20px;
   display: flex;
   margin-bottom: 50px;
+  background-color: white;
   justify-content: space-between;
 }
 .events .event .img1 {
@@ -275,7 +279,7 @@ body {
   height: 400px;
 }
 .events .event .event1 {
-  --c:#BFB182; /* the border color */
+  --c:#bd9204; /* the border color */
   --b: 5px; /* the border thickness*/
   --g: 5px; /* the gap on hover */
   padding: 30px;

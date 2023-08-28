@@ -10,8 +10,12 @@
         font-family: $font-roboto;
     }
     .event{
+        box-shadow: 1px 1px 10px $gray-color;
+    padding: 20px;
+    border-radius: 20px;
     display: flex;
     margin-bottom: 50px;
+    background-color: $text-color;
     justify-content: space-between;
     .img1{
         width: 400px;
@@ -19,7 +23,7 @@
     }
         .event1 {
     // --c:rgb(5,58,117); /* the border color */
-    --c:#BFB182; /* the border color */
+    --c:#bd9204; /* the border color */
     --b: 5px;    /* the border thickness*/
     --g: 5px;     /* the gap on hover */
     padding: 30px;
