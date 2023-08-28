@@ -582,6 +582,72 @@ footer:hover {
 /* header */
 /* events */
 /* footer */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .con1 {
+  align-items: center;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #BFB182;
+  padding: 50px;
+  border-radius: 5px;
+}
+main .con1 .con-1 {
+  width: 750px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #25213C;
+  background-color: white;
+}
+main .con1 .con-1 h1 {
+  color: #25213C;
+  font-size: 30px;
+}
+main .con1 .con-1 h5 {
+  margin-top: 10px;
+  color: #25213C;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+main .con1 .main-png {
+  width: 400px;
+}
+main .con2 {
+  margin-top: 50px;
+  width: 70%;
+  color: white;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px #BFB182;
+  border-radius: 10px;
+}
+main .con2 .con-2 {
+  display: flex;
+  flex-direction: row;
+}
+main .con2 .con-2 p {
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+main .con-1:hover {
+  box-shadow: 1px 1px 100px #bd9204 inset;
+}
+main .con2:hover {
+  box-shadow: none;
+  border-radius: 0;
+}
+
 /* executive committee page */
 /* reset */
 /* buttons */
