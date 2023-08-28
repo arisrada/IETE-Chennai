@@ -1,10 +1,20 @@
+/* reset */ 
+@use "../base/reset" as *;
+
+/* buttons */
 @use "../components/buttons" as *;
 
+/* variables */
 @use "../abstracts/variables" as *;
 
 /* header */
 @use "../layout/header" as *;
+
+/* events */
 @use "../layout/events" as *;
+
+/* footer */
+@use "../layout/footer" as *;
 
 
 .parallax{

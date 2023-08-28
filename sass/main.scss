@@ -1,9 +1,23 @@
-/* reset */
-@use "./base/reset";
-
-/* layout */
-@use "./layout/header";
-@use "./layout/footer";
-
-/* pages */
+/* home page */
 @use "./pages/home";
+
+/* about page */
+@use "./pages/about";
+
+/* executive committee page */
+@use "./pages/executive_committee";
+
+/* events page */
+@use "./pages/events";
+
+/* membership page */
+@use "./pages/membership";
+
+/* chencon page */
+@use "./pages/chencon";
+
+/* chenlink newsletter page */
+@use "./pages/chenlink_newsletter";
+
+/* contact page */
+@use "./pages/contact";

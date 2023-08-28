@@ -1,3 +1,4 @@
+/* home page */
 /* reset */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
@@ -15,7 +16,37 @@ a:hover, .active {
   color: gray;
 }
 
-/* layout */
+/* buttons */
+.btn1 {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgb(5, 58, 117);
+  background: linear-gradient(90deg, rgb(5, 58, 117) 4%, rgb(25, 116, 173) 100%);
+  border: none;
+  border-radius: 160px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgb(5, 58, 117);
+  border: none;
+  border-radius: 160px;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, rgb(25, 116, 173) 4%, rgb(5, 58, 117) 100%);
+}
+
+/* variables */
+/* header */
 .header {
   align-items: center;
   text-align: center;
@@ -80,80 +111,7 @@ a:hover, .active {
     display: block;
   }
 }
-footer {
-  padding: 30px;
-  height: 50vh;
-  width: 100%;
-  background: rgb(5, 58, 117);
-  background: linear-gradient(0deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
-  display: flex;
-  justify-content: space-around;
-}
-footer h1 {
-  line-height: 50px;
-  font-weight: bolder;
-  color: white;
-  font-size: 35px;
-}
-footer h5 {
-  font-family: "Roboto", sans-serif;
-  margin-top: 10px;
-  color: white;
-  font-size: 20px;
-  line-height: 30px;
-}
-footer a {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-footer:hover {
-  background: rgb(5, 58, 117);
-  background: linear-gradient(90deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
-}
-
-.copy-rights {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-  padding-right: 80px;
-  background: rgb(5, 58, 117);
-  background: linear-gradient(0deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
-}
-
-/* pages */
-.btn1 {
-  border: none;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  background: rgb(5, 58, 117);
-  background: linear-gradient(90deg, rgb(5, 58, 117) 4%, rgb(25, 116, 173) 100%);
-  border: none;
-  border-radius: 160px;
-  color: white;
-  text-decoration: none;
-}
-
-.btn1:hover {
-  border: none;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  background: rgb(5, 58, 117);
-  border: none;
-  border-radius: 160px;
-  color: white;
-  text-decoration: none;
-  background-image: linear-gradient(90deg, rgb(25, 116, 173) 4%, rgb(5, 58, 117) 100%);
-}
-
-/* layout */
-/* header */
+/* events */
 .events {
   margin: 5%;
 }
@@ -251,6 +209,51 @@ footer:hover {
     margin-top: 40px;
   }
 }
+/* footer */
+footer {
+  padding: 30px;
+  height: 50vh;
+  width: 100%;
+  background: rgb(5, 58, 117);
+  background: linear-gradient(0deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
+  display: flex;
+  justify-content: space-around;
+}
+footer h1 {
+  line-height: 50px;
+  font-weight: bolder;
+  color: white;
+  font-size: 35px;
+}
+footer h5 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer a {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer:hover {
+  background: rgb(5, 58, 117);
+  background: linear-gradient(90deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
+}
+
+.copy-rights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  padding-right: 80px;
+  background: rgb(5, 58, 117);
+  background: linear-gradient(0deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
+  color: white;
+}
+
 .parallax {
   background-image: url("../../images/img2.avif");
   min-height: 90vh;
@@ -421,4 +424,54 @@ footer:hover {
 .btn2:hover {
   padding: 15px;
   border-radius: 50%;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* about page */
+/* reset */
+/* buttons */
+/* variables */
+/* header */
+/* events */
+/* footer */
+/* executive committee page */
+/* reset */
+/* buttons */
+/* variables */
+/* header */
+/* events */
+/* footer */
+/* events page */
+/* reset */
+/* buttons */
+/* variables */
+/* header */
+/* events */
+/* footer */
+/* membership page */
+/* reset */
+/* buttons */
+/* variables */
+/* header */
+/* events */
+/* footer */
+/* chencon page */
+/* reset */
+/* buttons */
+/* variables */
+/* header */
+/* events */
+/* footer */
+/* chenlink newsletter page */
+/* reset */
+/* buttons */
+/* variables */
+/* header */
+/* events */
+/* footer */
+/* contact page */
+/* reset */
+/* buttons */
+/* variables */
+/* header */
+/* events */
+/* footer *//*# sourceMappingURL=main.css.map */
