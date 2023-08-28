@@ -84,22 +84,43 @@ footer {
   padding: 30px;
   height: 50vh;
   width: 100%;
-  background: rgb(128, 128, 128);
-  background: linear-gradient(0deg, rgb(128, 128, 128) 0%, rgb(180, 190, 238) 53%, rgb(128, 128, 128) 100%);
+  background: rgb(5, 58, 117);
+  background: linear-gradient(0deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
   display: flex;
   justify-content: space-around;
 }
+footer h1 {
+  line-height: 50px;
+  font-weight: bolder;
+  color: white;
+  font-size: 35px;
+}
+footer h5 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer a {
+  font-size: 20px;
+  line-height: 30px;
+}
 
 footer:hover {
-  background: rgb(128, 128, 128);
-  background: linear-gradient(90deg, rgb(128, 128, 128) 0%, rgb(180, 190, 238) 53%, rgb(128, 128, 128) 100%);
+  background: rgb(5, 58, 117);
+  background: linear-gradient(90deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
 }
 
 .copy-rights {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 30px;
+  align-items: center;
+  padding: 10px 30px;
+  padding-right: 80px;
+  background: rgb(5, 58, 117);
+  background: linear-gradient(0deg, rgb(5, 58, 117) 0%, rgb(25, 116, 173) 53%, rgb(5, 58, 117) 100%);
 }
 
 /* pages */

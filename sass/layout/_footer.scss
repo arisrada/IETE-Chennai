@@ -4,22 +4,43 @@ footer{
     padding: 30px;
     height: 50vh;
     width: 100%;
-    background: rgb(128,128,128);
-    background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(180,190,238,1) 53%, rgba(128,128,128,1) 100%);
+    background: rgb(5,58,117);
+    background: linear-gradient(0deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
     display: flex;
     justify-content: space-around;
+    h1{
+        line-height: 50px;
+        font-weight: bolder;
+        color: $text-color;
+        font-size: 35px;
+    }
+    h5{
+        font-family: $font-roboto;
+        margin-top: 10px;
+        color: $text-color;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    a{
+        font-size: 20px;
+        line-height: 30px;
+    }
     
 }
 
 footer:hover{
-    background: rgb(128,128,128);
-background: linear-gradient(90deg, rgba(128,128,128,1) 0%, rgba(180,190,238,1) 53%, rgba(128,128,128,1) 100%);
+    background: rgb(5,58,117);
+background: linear-gradient(90deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
 }
 
 .copy-rights{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 30px;
+    align-items: center;
+    padding: 10px 30px;
+    padding-right: 80px;
+    background: rgb(5,58,117);
+    background: linear-gradient(0deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
 }
 
