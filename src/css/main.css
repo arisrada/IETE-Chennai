@@ -1166,8 +1166,76 @@ main .con3:hover {
 /* buttons */
 /* variables */
 /* header */
-/* events */
 /* footer */
+main .container1 {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+main .container1 .card {
+  position: relative;
+  width: 220px;
+  height: 300px;
+  margin-bottom: 30px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #BFB182;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main .container1 .card .p1 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 900;
+}
+main .container1 .card .img1 {
+  width: 100%;
+  height: 70%;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main .container1 .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+main .container1 .card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main .container1 .card:hover .card__content {
+  transform: rotateX(0deg);
+}
+main .container1 .card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+main .container1 .card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #bd9204;
+  line-height: 1.4;
+}
+
 /* events page */
 /* reset */
 /* buttons */
@@ -1175,6 +1243,63 @@ main .con3:hover {
 /* header */
 /* events */
 /* footer */
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  --border-size: 3px;
+  --border-angle: 0turn;
+  height: 50vmin;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  background-image: conic-gradient(from var(--border-angle), black, black 50%, black), conic-gradient(from var(--border-angle), transparent 20%, #BFB182, #bd9204);
+  background-size: calc(100% - var(--border-size) * 2) calc(100% - var(--border-size) * 2), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 3s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.box-1:hover {
+  animation-play-state: paused;
+}
+.box-1 h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.box-1 h5 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.box-1 p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.box-1 .btn-star {
+  margin-bottom: 20px;
+  margin-top: 0;
+  position: relative;
+  padding: 12px 35px;
+  background: rgb(255, 235, 192);
+  background: linear-gradient(0deg, rgb(255, 235, 192) 0%, rgb(255, 200, 79) 100%);
+  font-size: 17px;
+  font-weight: 800;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 /* membership page */
 /* reset */
 /* buttons */
