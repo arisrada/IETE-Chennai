@@ -580,7 +580,328 @@ footer:hover {
 /* buttons */
 /* variables */
 /* header */
-/* events */
+/* grid */
+/* variables */
+/*works janky on mobile :<*/
+.container {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  transition: 200ms;
+}
+
+.container:active {
+  width: 290px;
+  height: 90px;
+}
+
+#card {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  transition: 700ms;
+  background: rgb(255, 235, 192);
+  background: linear-gradient(0deg, rgb(255, 235, 192) 0%, rgb(191, 177, 130) 100%);
+}
+
+#prompt {
+  align-items: center;
+  z-index: 20;
+  font-size: 20px;
+  font-weight: 900;
+  transition: 300ms ease-in-out-out;
+  color: #25213C;
+  font-family: "Roboto", sans-serif;
+}
+
+.tracker {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+}
+
+.tracker:hover {
+  cursor: pointer;
+}
+
+.tracker:hover ~ #card {
+  transition: 300ms;
+  filter: brightness(1.1);
+}
+
+.container:hover #card::before {
+  transition: 200ms;
+  content: "";
+  opacity: 80%;
+}
+
+.canvas {
+  perspective: 800px;
+  inset: 0;
+  z-index: 200;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5" "tr-6 tr-7 tr-8 tr-9 tr-10" "tr-11 tr-12 tr-13 tr-14 tr-15" "tr-16 tr-17 tr-18 tr-19 tr-20" "tr-21 tr-22 tr-23 tr-24 tr-25";
+}
+
+#card::before {
+  content: "";
+  filter: blur(2rem);
+  opacity: 30%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transition: 200ms;
+}
+
+.tr-1 {
+  grid-area: tr-1;
+}
+
+.tr-2 {
+  grid-area: tr-2;
+}
+
+.tr-3 {
+  grid-area: tr-3;
+}
+
+.tr-4 {
+  grid-area: tr-4;
+}
+
+.tr-5 {
+  grid-area: tr-5;
+}
+
+.tr-6 {
+  grid-area: tr-6;
+}
+
+.tr-7 {
+  grid-area: tr-7;
+}
+
+.tr-8 {
+  grid-area: tr-8;
+}
+
+.tr-9 {
+  grid-area: tr-9;
+}
+
+.tr-10 {
+  grid-area: tr-10;
+}
+
+.tr-11 {
+  grid-area: tr-11;
+}
+
+.tr-12 {
+  grid-area: tr-12;
+}
+
+.tr-13 {
+  grid-area: tr-13;
+}
+
+.tr-14 {
+  grid-area: tr-14;
+}
+
+.tr-15 {
+  grid-area: tr-15;
+}
+
+.tr-16 {
+  grid-area: tr-16;
+}
+
+.tr-17 {
+  grid-area: tr-17;
+}
+
+.tr-18 {
+  grid-area: tr-18;
+}
+
+.tr-19 {
+  grid-area: tr-19;
+}
+
+.tr-20 {
+  grid-area: tr-20;
+}
+
+.tr-21 {
+  grid-area: tr-21;
+}
+
+.tr-22 {
+  grid-area: tr-22;
+}
+
+.tr-23 {
+  grid-area: tr-23;
+}
+
+.tr-24 {
+  grid-area: tr-24;
+}
+
+.tr-25 {
+  grid-area: tr-25;
+}
+
+.tr-1:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-2:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-3:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-4:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-5:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-6:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-7:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-8:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-9:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-10:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-11:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-12:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-13:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-14:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-15:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-16:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-17:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-18:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-19:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-20:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-21:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-22:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-23:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-24:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-25:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
+
 /* footer */
 main {
   display: flex;
@@ -639,6 +960,52 @@ main .con2 .con-2 p {
   line-height: 30px;
   font-family: "Roboto", sans-serif;
 }
+main .con3 {
+  width: 90%;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+main .con3 h1 {
+  color: #BFB182;
+}
+main .con3 .con-3 {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+main .con3 .con-3 p {
+  width: 30%;
+  color: #BFB182;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+main .con4 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 40px;
+}
+main .con5 {
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+main .con5 h1 {
+  color: #BFB182;
+  font-size: 28px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+main .con5 .con-5 {
+  justify-content: center;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
 
 main .con-1:hover {
   box-shadow: 1px 1px 100px #bd9204 inset;
@@ -647,7 +1014,150 @@ main .con2:hover {
   box-shadow: none;
   border-radius: 0;
 }
+main .con3:hover {
+  box-shadow: 1px 1px 10px #BFB182;
+}
 
+@media (max-width: 1090px) {
+  main .con1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .con1 .con-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  main .con2 .con-2 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  main .con3 .con-3 {
+    flex-direction: column;
+  }
+  main .con3 .con-3 p {
+    width: 100%;
+  }
+}
+.num-card {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  padding: 40px 0px;
+  background: rgb(255, 235, 192);
+  background: linear-gradient(0deg, rgb(255, 235, 192) 0%, rgb(255, 200, 79) 100%);
+  border-radius: 20px;
+}
+.num-card .number-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  font-size: 40px;
+  color: #25213C;
+  font-weight: 900;
+}
+.num-card .num-con {
+  width: 180px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.num-card .num-text {
+  margin-top: 20px;
+  font-weight: 900;
+  color: #25213C;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 860px) {
+  .num-card .number-field {
+    font-size: 30px;
+  }
+  .num-card .num-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 740px) {
+  .num-card .number-field {
+    font-size: 25px;
+  }
+  .num-card .num-text {
+    font-size: 16px;
+  }
+  .num-card .num-con {
+    width: 100px;
+  }
+}
+@media (max-width: 665px) {
+  .num-card .number-field {
+    font-size: 25px;
+  }
+  .num-card .num-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .num-card .number-field {
+    font-size: 22px;
+  }
+  .num-card .num-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 460px) {
+  .num-card .number-field {
+    font-size: 14px;
+  }
+  .num-card .num-text {
+    font-size: 10px;
+  }
+  .num-card .num-con {
+    width: 50px;
+  }
+}
+@media (max-width: 300px) {
+  .num-card .number-field {
+    font-size: 22px;
+  }
+  .num-card .num-text {
+    font-size: 16px;
+  }
+  .num-card .num-con {
+    width: 80px;
+  }
+}
+
+@media (max-width: 750px) {
+  .num-card {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 30px 0;
+  }
+}
+@media (max-width: 450px) {
+  .num-card {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 30px 0;
+  }
+}
+@media (max-width: 300px) {
+  .num-card {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    background-image: linear-gradient(yellow, yellow);
+    background-size: 50px 0;
+    row-gap: 40px;
+    width: 100px;
+  }
+}
 /* executive committee page */
 /* reset */
 /* buttons */

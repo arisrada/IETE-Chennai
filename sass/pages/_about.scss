@@ -10,8 +10,8 @@
 /* header */
 @use "../layout/header" as *;
 
-/* events */
-@use "../layout/events" as *;
+/* grid */
+@use "../layout/grid" as *;
 
 /* footer */
 @use "../layout/footer" as *;
@@ -73,6 +73,53 @@ main{
             }
         }
     }
+    .con3{
+        width: 90%;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        h1{
+            color: $gray-color;
+        }
+        .con-3{
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            p{
+                width: 30%;
+                color: $gray-color;
+                font-size: 18px;
+                line-height: 30px;
+                font-family: $font-roboto;
+            }
+        }  
+    }
+    .con4{
+        width: 100%;
+        justify-content: center;
+        display: flex; 
+        margin: 40px;  
+    }
+    .con5{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: $gray-color;
+            font-size: 28px;
+            line-height: 30px;
+            font-family: $font-roboto;
+            margin-bottom: 30px;
+        }
+        .con-5{
+        justify-content: center;
+        display: flex;
+        gap: 60px;
+        flex-wrap: wrap;
+        }
+        
+    }
 }
 main{
     .con-1:hover{
@@ -82,5 +129,166 @@ main{
         box-shadow: none;
         border-radius: 0;
     }
+    .con3:hover{
+        box-shadow: 1px 1px 10px $gray-color;
+    }
 }
+
+@media (max-width: 1090px) {
+    main{
+        .con1{
+            display: flex;
+            flex-direction: column-reverse;
+            .con-1{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    main{
+        .con2{
+            .con-2{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    main{
+        .con3{
+            .con-3{
+                flex-direction: column;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+.num-card {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    padding: 40px 0px;
+    background: rgb(255,235,192);
+    background: linear-gradient(0deg, rgba(255,235,192,1) 0%, rgba(255,200,79,1) 100%);
+    border-radius: 20px;
+    .number-field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      font-size: 40px;
+      color: $blue-color;
+      font-weight: 900;
+    }
+   
+
+    .num-con{
+      width: 180px;
+      font-family: $font-roboto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   
+    }
+    .num-text{
+      margin-top: 20px;
+      font-weight: 900;
+      color:$blue-color;
+      font-size: 22px;
+      font-family: $font-roboto;
+
+    }
+    @media (max-width:860px) {
+      .number-field{
+        font-size: 30px;
+      }
+      .num-text{
+        font-size: 18px;
+      }
+    }
+    @media (max-width:740px) {
+      .number-field{
+        font-size: 25px;
+      }
+      .num-text{
+        font-size: 16px;
+      }
+      .num-con{
+        width: 100px;
+      }
+    }
+    @media (max-width:665px) {
+      .number-field{
+        font-size: 25px;
+      }
+      .num-text{
+        font-size: 14px;
+      }
+    }
+    @media (max-width:550px) {
+      .number-field{
+        font-size: 22px;
+      }
+      .num-text{
+        font-size: 12px;
+      }
+    }
+    @media (max-width:460px) {
+      .number-field{
+        font-size: 14px;
+      }
+      .num-text{
+        font-size: 10px;
+      }
+      .num-con{
+        width: 50px;
+      }
+    }
+    @media (max-width:300px) {
+      .number-field{
+        font-size: 22px;
+      }
+      .num-text{
+        font-size: 16px;
+      }
+      .num-con{
+        width: 80px;
+      }
+    }
+  }
+
+
+  @media (max-width:750px){
+    .num-card{
+      column-gap: 10px;
+      padding: 30px 0;
+    }
+  }
+  @media (max-width:450px){
+    .num-card{
+      column-gap: 10px;
+      padding: 30px 0;
+    }
+  }
+  @media (max-width:300px){
+    .num-card{
+      display: grid;
+      grid-template-columns: repeat(1fr);
+      background-image: linear-gradient(yellow,yellow);
+      background-size: 50px 0;
+      row-gap: 40px;
+      width: 100px;
+    }
+  }
 
