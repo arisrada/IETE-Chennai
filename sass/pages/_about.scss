@@ -17,6 +17,7 @@
 @use "../layout/footer" as *;
 
 main{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,15 +28,16 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: $gray-color;
+        background-color: $blue-color;
         padding: 50px;
         border-radius: 5px;
         .con-1{
             width: 750px;
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 1px 1px 10px $blue-color;
+            
             background-color: $text-color;
+            box-shadow: 1px 1px 100px $yellow-color inset;
             h1{
                 color: $blue-color;
                 font-size: 30px;
@@ -123,7 +125,7 @@ main{
 }
 main{
     .con-1:hover{
-        box-shadow: 1px 1px 100px $yellow-color inset;
+        box-shadow: 1px 1px 10px $yellow-color;
     }
     .con2:hover{
         box-shadow: none;

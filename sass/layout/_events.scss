@@ -23,11 +23,12 @@
     }
         .event1 {
     // --c:rgb(5,58,117); /* the border color */
-    --c:#bd9204; /* the border color */
+    --c:#BFB182; /* the border color */
     --b: 5px;    /* the border thickness*/
     --g: 5px;     /* the gap on hover */
     padding: 30px;
     --_g: #0000 25%,var(--c) 0;
+    border-radius: 30px;
     background: 
       conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
        var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
