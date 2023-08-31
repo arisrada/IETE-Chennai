@@ -16,7 +16,7 @@
 /* footer */
 @use "../layout/footer" as *;
 
-.about{
+.about-page{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -108,6 +108,7 @@
         width: 90%;
         align-items: center;
         justify-content: center;
+        margin-bottom: 70px;
         h1{
             color: $gray-color;
             font-size: 28px;
@@ -124,7 +125,7 @@
         
     }
 }
-.about{
+.about-page{
     .con-1:hover{
       border: 5px solid $text-color;
       box-shadow: 2px 2px 120px $gold-color inset;
@@ -139,7 +140,7 @@
 }
 
 @media (max-width: 1090px) {
-  .about{
+  .about-page{
         .con1{
             display: flex;
             flex-direction: column-reverse;
@@ -151,7 +152,7 @@
 }
 
 @media (max-width:900px) {
-  .about{
+  .about-page{
         .con2{
             .con-2{
                 flex-direction: column;
@@ -161,7 +162,7 @@
 }
 
 @media (max-width:700px) {
-  .about{
+  .about-page{
         .con3{
             .con-3{
                 flex-direction: column;

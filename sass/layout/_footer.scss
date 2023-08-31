@@ -4,35 +4,41 @@ footer{
     padding: 30px;
     height: 50vh;
     width: 100%;
-    background: rgb(5,58,117);
-    background: linear-gradient(0deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
+    background: black;
+    border-top: 2px solid white;
+    
     display: flex;
     justify-content: space-around;
     h1{
         line-height: 50px;
         font-weight: bolder;
-        color: $text-color;
-        font-size: 35px;
+        color: $yellow-color;
+        font-size: 25px;
     }
     h5{
-        font-family: $font-roboto;
+
         margin-top: 10px;
-        color: $text-color;
+        font-weight: lighter;
+        color:$yellow-color;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 3cap;
     }
     a{
         font-size: 20px;
         line-height: 30px;
+      
     }
-    
+   
+}
+.links{
+display: flex;
+ flex-direction: column;
+
 }
 
-footer:hover{
-    background: rgb(5,58,117);
-background: linear-gradient(90deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
+.copy-rights-text{
+    margin-left:40%;
 }
-
 .copy-rights{
     display: flex;
     flex-direction: row;
@@ -40,8 +46,54 @@ background: linear-gradient(90deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, 
     align-items: center;
     padding: 10px 30px;
     padding-right: 80px;
-    background: rgb(5,58,117);
-    background: linear-gradient(0deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
+    background: black;
     color: $text-color;
+    
+    border-top: 2px solid $yellow-color;
 }
+
+// footer{
+//     padding: 30px;
+//     height: 50vh;
+//     width: 100%;
+//     background: rgb(5,58,117);
+//     background: linear-gradient(0deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
+//     display: flex;
+//     justify-content: space-around;
+//     h1{
+//         line-height: 50px;
+//         font-weight: bolder;
+//         color: $text-color;
+//         font-size: 35px;
+//     }
+//     h5{
+//         font-family: $font-roboto;
+//         margin-top: 10px;
+//         color: $text-color;
+//         font-size: 20px;
+//         line-height: 30px;
+//     }
+//     a{
+//         font-size: 20px;
+//         line-height: 30px;
+//     }
+    
+// }
+
+// footer:hover{
+//     background: rgb(5,58,117);
+// background: linear-gradient(90deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
+// }
+
+// .copy-rights{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 30px;
+//     padding-right: 80px;
+//     background: rgb(5,58,117);
+//     background: linear-gradient(0deg, rgba(5,58,117,1) 0%, rgba(25,116,173,1) 53%, rgba(5,58,117,1) 100%);
+//     color: $text-color;
+// }
 
