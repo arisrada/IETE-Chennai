@@ -13,7 +13,7 @@ a {
 }
 
 a:hover, .active {
-  color: #BFB182;
+  color: #f9b234;
 }
 
 body {
@@ -53,15 +53,15 @@ body {
   margin-top: 30px;
   position: relative;
   padding: 12px 35px;
-  background: black;
   font-size: 17px;
   font-weight: 800;
-  color: #BFB182;
-  border: 3px solid black;
+  border: 3px solid #bd9204;
   border-radius: 8px;
   box-shadow: 0 0 0 rgba(254, 193, 149, 0.5490196078);
   transition: all 0.3s ease-in-out;
   font-family: "Roboto", sans-serif;
+  background: white;
+  color: #bd9204;
 }
 .btn-star .star-1 {
   position: absolute;
@@ -128,10 +128,10 @@ body {
 }
 
 .btn-star:hover {
-  background: transparent;
-  color: black;
+  background: black;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+  color: #BFB182;
 }
 .btn-star:hover .star-1 {
   position: absolute;
@@ -199,16 +199,24 @@ body {
   justify-content: space-between;
   color: white;
   font-family: "Roboto", sans-serif;
-  box-shadow: 1px 1px 10px #BFB182;
+  box-shadow: 1px 1px 10px white;
 }
 .header_logo {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+.header_logo p {
+  line-height: 20px;
+  font-family: sans-serif;
+}
 .header_head {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+}
+.header_head a {
+  font-weight: 600;
+  font-family: sans-serif;
 }
 .header .fa {
   display: none;
@@ -262,26 +270,32 @@ body {
 .events .h1 {
   font-weight: bolder;
   color: black;
-  font-size: 35px;
-  margin-bottom: 40px;
+  font-size: 25px;
+  margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
 }
 .events .event {
-  box-shadow: 1px 1px 10px #BFB182;
+  width: 80%;
+  box-shadow: 2px 2px 20px white;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 20px;
   border-radius: 20px;
   display: flex;
+  gap: 20px;
   margin-bottom: 50px;
-  background-color: white;
+  background-color: black;
   justify-content: space-between;
 }
 .events .event .img1 {
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 .events .event .event1 {
-  --c:#BFB182; /* the border color */
-  --b: 5px; /* the border thickness*/
+  --c:#bd9204;
+  /* the border color */
+  --b: 2px; /* the border thickness*/
   --g: 5px; /* the gap on hover */
   padding: 30px;
   --_g: #0000 25%,var(--c) 0;
@@ -291,25 +305,27 @@ body {
   cursor: pointer;
 }
 .events .event .event1 .h1 {
-  line-height: 50px;
+  line-height: 30px;
   font-weight: bolder;
-  color: black;
-  font-size: 35px;
+  color: white;
+  font-size: 25px;
 }
 .events .event .event1 .h5 {
-  margin-top: 10px;
   margin-left: 30px;
-  color: #BFB182;
+  color: #bd9204;
   font-size: 20px;
 }
 .events .event .event1 .p {
   margin-top: 20px;
-  font-size: 25px;
+  color: white;
+  font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 40px;
+  line-height: 30px;
+  font-weight: 600;
 }
 .events .event .event1 .btn-star {
   margin-top: 60px;
+  margin-left: 60px;
 }
 .events .event .event1:hover {
   --_i: 100%;
@@ -403,8 +419,8 @@ footer:hover {
   color: white;
 }
 
-.parallax {
-  background-image: url("../../images/img2.avif");
+.index .parallax {
+  background-image: url("../../images/img3.jpg");
   min-height: 90vh;
   background-attachment: fixed;
   background-position: center;
@@ -417,67 +433,69 @@ footer:hover {
   justify-content: space-around;
   align-items: last baseline;
 }
-
 @property --angle {
-  syntax: "<angle>";
-  initial-value: 90deg;
-  inherits: true;
+  .index {
+    syntax: "<angle>";
+    initial-value: 90deg;
+    inherits: true;
+  }
 }
 @property --gradX {
-  syntax: "<percentage>";
-  initial-value: 50%;
-  inherits: true;
+  .index {
+    syntax: "<percentage>";
+    initial-value: 50%;
+    inherits: true;
+  }
 }
 @property --gradY {
-  syntax: "<percentage>";
-  initial-value: 0%;
-  inherits: true;
+  .index {
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: true;
+  }
 }
-:root {
+.index :root {
   --d: 2500ms;
   --angle: 90deg;
   --gradX: 100%;
   --gradY: 50%;
-  --c1: #BFB182;
+  --c1: #f9b234;
   --c2: rgba(168, 239, 255, 0.1);
-  --c3:black;
+  --c3:white;
 }
-
-.box1 {
+.index .box1 {
   width: 400px;
   font-size: 3vw;
   margin: max(1rem, 3vw);
-  border: 0.35rem solid;
+  border: 0.15rem solid;
+  background-color: black;
+  opacity: 0.8;
   padding: 3vw;
-  -o-border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-  animation: borderRotate var(--d) linear infinite forwards;
-}
-.box1 p {
-  font-size: 25px;
-}
-
-.box2 {
-  width: 800px;
-  line-height: 30px;
-  font-size: 3vw;
-  margin: max(1rem, 3vw);
-  border: 0.35rem solid;
-  padding: 3vw;
-  -o-border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-  animation: borderRotate var(--d) linear infinite forwards;
-}
-.box2 p {
-  font-size: 20px;
-}
-
-.box1:hover, .box2:hover {
   -o-border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
      border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
-  color: var(--c1);
+  animation: borderRotate var(--d) linear infinite forwards;
 }
-
+.index .box1 p {
+  font-size: 25px;
+}
+.index .box2 {
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  line-height: 30px;
+  font-size: 3vw;
+  background-color: black;
+  opacity: 0.8;
+  margin: max(1rem, 3vw);
+  border: 0.15rem solid;
+  padding: 20px 5%;
+  -o-border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
+     border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+.index .box2 p {
+  font-size: 25px;
+}
 @keyframes borderRotate {
   100% {
     --angle: 420deg;
@@ -505,10 +523,11 @@ footer:hover {
     --gradY: 0%;
   }
 }
-.wrapper {
-  box-shadow: 1px 1px 100px #bd9204 inset;
-  width: 90%;
-  margin: 20px 5%;
+.index .wrapper {
+  border: 5px solid #f9b234;
+  box-shadow: 1px 1px 10px #bd9204;
+  width: 80%;
+  margin: 20px 10%;
   text-align: center;
   border-radius: 10px;
   padding: 40px;
@@ -516,53 +535,53 @@ footer:hover {
   background-color: white;
   line-height: 30px;
 }
-.wrapper h1 {
-  line-height: 70px;
+.index .wrapper h1 {
+  line-height: 50px;
   font-weight: bolder;
   color: black;
-  font-size: 45px;
+  font-size: 38px;
 }
-.wrapper h5 {
+.index .wrapper h5 {
   margin-top: 10px;
   margin-left: 30px;
-  color: #BFB182;
+  color: #bd9204;
   font-size: 20px;
 }
-.wrapper p {
+.index .wrapper p {
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 40px;
+  line-height: 30px;
+  font-weight: 600;
 }
-.wrapper .btn1 {
+.index .wrapper .btn1 {
   margin-top: 30px;
 }
-
 @media (max-width: 700px) {
-  .wrapper h1 {
+  .index .wrapper h1 {
     line-height: 50px;
     font-weight: bolder;
     color: black;
     font-size: 35px;
   }
-  .wrapper h5 {
+  .index .wrapper h5 {
     margin-top: 10px;
     margin-left: 30px;
     color: #BFB182;
     font-size: 20px;
   }
-  .wrapper p {
+  .index .wrapper p {
     margin-top: 20px;
     font-size: 25px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 35px;
   }
 }
-.wrapper:hover {
-  box-shadow: 1px 1px 10px #bd9204;
+.index .wrapper:hover {
+  border: 5px solid white;
+  box-shadow: 2px 2px 120px #f9b234 inset;
 }
-
-.btn2 {
+.index .btn2 {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -571,8 +590,7 @@ footer:hover {
   border-radius: 50%;
   z-index: 99;
 }
-
-.btn2:hover {
+.index .btn2:hover {
   padding: 15px;
   border-radius: 50%;
 }
@@ -905,13 +923,13 @@ footer:hover {
 }
 
 /* footer */
-main {
+.about {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .con1 {
+.about .con1 {
   align-items: center;
   width: 90%;
   display: flex;
@@ -921,28 +939,29 @@ main .con1 {
   padding: 50px;
   border-radius: 5px;
 }
-main .con1 .con-1 {
+.about .con1 .con-1 {
   width: 750px;
   padding: 30px;
   border-radius: 20px;
+  border: 5px solid #f9b234;
+  box-shadow: 1px 1px 10px #bd9204;
   background-color: white;
-  box-shadow: 1px 1px 100px #bd9204 inset;
 }
-main .con1 .con-1 h1 {
+.about .con1 .con-1 h1 {
   color: black;
   font-size: 30px;
 }
-main .con1 .con-1 h5 {
+.about .con1 .con-1 h5 {
   margin-top: 10px;
   color: black;
   font-size: 18px;
   line-height: 30px;
   font-family: "Roboto", sans-serif;
 }
-main .con1 .main-png {
+.about .con1 .main-png {
   width: 400px;
 }
-main .con2 {
+.about .con2 {
   margin-top: 50px;
   width: 70%;
   color: white;
@@ -952,94 +971,95 @@ main .con2 {
   box-shadow: 1px 1px 10px #BFB182;
   border-radius: 10px;
 }
-main .con2 .con-2 {
+.about .con2 .con-2 {
   display: flex;
   flex-direction: row;
 }
-main .con2 .con-2 p {
+.about .con2 .con-2 p {
   margin-top: 10px;
   color: white;
   font-size: 18px;
   line-height: 30px;
   font-family: "Roboto", sans-serif;
 }
-main .con3 {
+.about .con3 {
   width: 90%;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
-main .con3 h1 {
+.about .con3 h1 {
   color: #BFB182;
 }
-main .con3 .con-3 {
+.about .con3 .con-3 {
   justify-content: space-between;
   align-items: center;
   display: flex;
 }
-main .con3 .con-3 p {
+.about .con3 .con-3 p {
   width: 30%;
   color: #BFB182;
   font-size: 18px;
   line-height: 30px;
   font-family: "Roboto", sans-serif;
 }
-main .con4 {
+.about .con4 {
   width: 100%;
   justify-content: center;
   display: flex;
   margin: 40px;
 }
-main .con5 {
+.about .con5 {
   width: 90%;
   align-items: center;
   justify-content: center;
 }
-main .con5 h1 {
+.about .con5 h1 {
   color: #BFB182;
   font-size: 28px;
   line-height: 30px;
   font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
 }
-main .con5 .con-5 {
+.about .con5 .con-5 {
   justify-content: center;
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
 }
 
-main .con-1:hover {
-  box-shadow: 1px 1px 10px #bd9204;
+.about .con-1:hover {
+  border: 5px solid white;
+  box-shadow: 2px 2px 120px #f9b234 inset;
 }
-main .con2:hover {
+.about .con2:hover {
   box-shadow: none;
   border-radius: 0;
 }
-main .con3:hover {
+.about .con3:hover {
   box-shadow: 1px 1px 10px #BFB182;
 }
 
 @media (max-width: 1090px) {
-  main .con1 {
+  .about .con1 {
     display: flex;
     flex-direction: column-reverse;
   }
-  main .con1 .con-1 {
+  .about .con1 .con-1 {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  main .con2 .con-2 {
+  .about .con2 .con-2 {
     flex-direction: column;
   }
 }
 @media (max-width: 700px) {
-  main .con3 .con-3 {
+  .about .con3 .con-3 {
     flex-direction: column;
   }
-  main .con3 .con-3 p {
+  .about .con3 .con-3 p {
     width: 100%;
   }
 }

@@ -17,8 +17,9 @@
 @use "../layout/footer" as *;
 
 
-.parallax{
-    background-image: url("../../images/img2.avif");
+.index{
+  .parallax{
+    background-image: url("../../images/img3.jpg");
     min-height: 90vh;
     background-attachment: fixed;
     background-position: center;
@@ -30,6 +31,7 @@
     color: $text-color;
     justify-content: space-around;
     align-items: last baseline;
+    
 }
 
 @property --angle {
@@ -55,10 +57,10 @@
 	--angle: 90deg;
 	--gradX: 100%;
 	--gradY: 50%;
-	--c1: #BFB182;
+	--c1: #f9b234;
 	// --c1: rgba(168, 239, 255, 1);
 	--c2: rgba(168, 239, 255, 0.1);
-    --c3:black;
+    --c3:white;
     // --c3:rgba(5,58,117,1) ;
 }
 
@@ -66,9 +68,12 @@
     width: 400px;
 	font-size: 3vw;
 	margin: max(1rem, 3vw);
-	border: 0.35rem solid;
+	border: 0.15rem solid;
+  background-color: $blue-color;
+  opacity: 0.8;
 	padding: 3vw;
-	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
+	// border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
     p{
         font-size: 25px;
@@ -76,23 +81,28 @@
 }
 
 .box2 {
-    width: 800px;
-    line-height: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  line-height: 30px;
 	font-size: 3vw;
+  background-color: $blue-color;
+  opacity: 0.8;
 	margin: max(1rem, 3vw);
-	border: 0.35rem solid;
-	padding: 3vw;
-	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	border: 0.15rem solid;
+	padding: 20px 5%;
+  border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
+	// border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
     p{
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
-.box1:hover, .box2:hover{
-    border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
-    color: var(--c1);
-}
+// .box1:hover, .box2:hover{
+//     border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
+//     // color: var(--c1);
+// }
 
 @keyframes borderRotate {
 	100% {
@@ -124,9 +134,10 @@
 }
 
 .wrapper {
-    box-shadow: 1px 1px 100px $yellow-color inset;
-    width: 90%;
-    margin: 20px 5%;
+    border: 5px solid $gold-color;
+    box-shadow: 1px 1px 10px $yellow-color;
+    width: 80%;
+    margin: 20px 10%;
     text-align: center;
     border-radius: 10px;
     padding: 40px;
@@ -134,22 +145,23 @@
     background-color: $text-color;
     line-height: 30px;
     h1{
-        line-height: 70px;
+        line-height: 50px;
         font-weight: bolder;
         color: $blue-color;
-        font-size: 45px;
+        font-size: 38px;
     }
     h5{
         margin-top: 10px;
         margin-left: 30px;
-        color: $gray-color;
+        color: $yellow-color;
         font-size: 20px;
     }
     p{
         margin-top: 20px;
-        font-size: 30px;
+        font-size: 20px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 40px;
+        line-height: 30px;
+        font-weight: 600;
     }
     .btn1{
         margin-top: 30px;
@@ -181,7 +193,8 @@
   }
 
   .wrapper:hover{
-    box-shadow: 1px 1px 10px $yellow-color;
+    border: 5px solid $text-color;
+    box-shadow: 2px 2px 120px $gold-color inset;
   }
   
   
@@ -256,3 +269,5 @@
 // 		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 // 	}
 // }
+}
+

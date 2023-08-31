@@ -10,15 +10,23 @@
     justify-content: space-between;
     color: $text-color;
     font-family: $font-roboto;
-    box-shadow: 1px 1px 10px $gray-color;
+    box-shadow: 1px 1px 10px $text-color;
     &_logo{
         display: flex;
         gap: 20px;
         align-items: center;
+        p{
+            line-height: 20px;
+            font-family: sans-serif;
+        }
     }
     &_head{
         display: flex;
-        gap: 10px;
+        gap: 20px;
+        a{
+            font-weight: 600;
+            font-family: sans-serif;
+        }
     }
     .fa{
         display: none;

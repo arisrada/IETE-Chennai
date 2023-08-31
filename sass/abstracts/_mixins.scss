@@ -32,15 +32,16 @@
   margin-top: 30px;
   position: relative;
   padding: 12px 35px;
-  background: $blue-color;
+  // background: $blue-color;
   font-size: 17px;
   font-weight: 800;
-  color: $gray-color;
-  border: 3px solid $blue-color;
+  border: 3px solid $yellow-color;
   border-radius: 8px;
   box-shadow: 0 0 0 #fec1958c;
   transition: all .3s ease-in-out;
   font-family: $font-roboto;
+  background: $text-color;
+  color: $yellow-color;
 }
 
 @mixin star-1 {
@@ -110,11 +111,12 @@
   }
   
 @mixin btn-star-hover {
-    background: transparent;
-    color: $blue-color;
+    background: $blue-color;
+    // color: $blue-color;
     // box-shadow: 0 0 25px $blue-color;
     font-family: $font-roboto;
     font-weight: 900;
+    color: $gray-color;
   }
   
 @mixin btn-hover-star-1 {
