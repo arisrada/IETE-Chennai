@@ -34,47 +34,15 @@
     
 }
 
-@property --angle {
-    syntax: '<angle>';
-    initial-value: 90deg;
-    inherits: true;
-  }
-  
-  @property --gradX {
-    syntax: '<percentage>';
-    initial-value: 50%;
-    inherits: true;
-  }
-  
-  @property --gradY {
-    syntax: '<percentage>';
-    initial-value: 0%;
-    inherits: true;
-  }
-
-  :root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: #f9b234;
-	// --c1: rgba(168, 239, 255, 1);
-	--c2: rgba(168, 239, 255, 0.1);
-    --c3:white;
-    // --c3:rgba(5,58,117,1) ;
-}
-
 .box1 {
     width: 400px;
 	font-size: 3vw;
 	margin: max(1rem, 3vw);
 	border: 0.15rem solid;
-  background-color: $blue-color;
+  background-color: $text-color;
   opacity: 0.8;
 	padding: 3vw;
-  border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
-	// border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-	animation: borderRotate var(--d) linear infinite forwards;
+  color: $blue-color;
     p{
         font-size: 25px;
     }
@@ -83,17 +51,16 @@
 .box2 {
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 400px;
   line-height: 30px;
 	font-size: 3vw;
-  background-color: $blue-color;
+  color: $blue-color;
+  background-color: $text-color;
   opacity: 0.8;
 	margin: max(1rem, 3vw);
 	border: 0.15rem solid;
-	padding: 20px 5%;
-  border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
-	// border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-	animation: borderRotate var(--d) linear infinite forwards;
+	padding: 20px;
     p{
         font-size: 25px;
     }
@@ -134,7 +101,7 @@
 }
 
 .wrapper {
-    border: 5px solid $gold-color;
+    border: 2px solid $gold-color;
     box-shadow: 1px 1px 10px $yellow-color;
     width: 80%;
     margin: 20px 10%;
@@ -142,18 +109,19 @@
     border-radius: 10px;
     padding: 40px;
     font-family: $font-roboto;
-    background-color: $text-color;
+    background-color: $blue-color;
     line-height: 30px;
     h1{
-        line-height: 50px;
-        font-weight: bolder;
-        color: $blue-color;
-        font-size: 38px;
+        line-height: 40px;
+        // font-weight: bolder;
+        color: $text-color;
+        font-size: 28px;
+        font-family: sans-serif;
     }
     h5{
         margin-top: 10px;
         margin-left: 30px;
-        color: $yellow-color;
+        color: $gold-color;
         font-size: 20px;
     }
     p{
@@ -193,7 +161,7 @@
   }
 
   .wrapper:hover{
-    border: 5px solid $text-color;
+    border: 2px solid $text-color;
     box-shadow: 2px 2px 120px $gold-color inset;
   }
   
@@ -271,3 +239,20 @@
 // }
 }
 
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
