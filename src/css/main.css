@@ -1217,6 +1217,11 @@ footer a {
 .executive-committee-page .container1 .card .p2 {
   color: black;
   font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.executive-committee-page .container1 .card .p3 {
+  color: #f9b234;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .executive-committee-page .container1 .card .img1 {
   width: 200px;
