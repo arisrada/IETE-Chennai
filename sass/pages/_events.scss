@@ -30,7 +30,7 @@
     flex-direction: column;
     --border-size: 3px;
     --border-angle: 0turn;
-    height: 50vmin;
+    // height: 50vmin;
     padding: 40px;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,10 @@
       cover;
     background-position: center center;
     background-repeat: no-repeat;
-  
+    .btn-star{
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
     animation: bg-spin 3s linear infinite;
     @keyframes bg-spin {
       to {
@@ -73,24 +76,353 @@
         font-family: $font-roboto;
         margin-bottom: 20px;
     }
-    .btn-star{
-        margin-bottom: 20px;
-        margin-top: 0;
-        position: relative;
-        padding: 12px 35px;
-        background: rgb(255,235,192);
-        background: linear-gradient(0deg, rgba(255,235,192,1) 0%, rgba(255,200,79,1) 100%);
-        font-size: 17px;
-        font-weight: 800;
-        color: $blue-color;
-        font-family: $font-roboto;
-    }
   }
   
 
 }
+
+.chencon-page{
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+    .conts{
+        display:flex;
+        flex-direction: row;
+        padding: 20px;
+        gap: 30px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .boxs{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        --border-size: 3px;
+        --border-angle: 0turn;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+        .chencon{
+          width:100%;
+          height:400px;
+        }
+        background-image: conic-gradient(
+            from var(--border-angle),
+            $blue-color,
+            $blue-color 50%,
+            $blue-color
+          ),
+          conic-gradient(from var(--border-angle), transparent 20%, $gray-color, $yellow-color);
+        background-size: calc(100% - (var(--border-size) * 2))
+            calc(100% - (var(--border-size) * 2)),
+          cover;
+         
+        background-repeat: no-repeat;
+      
+        animation: bg-spin 3s linear infinite;
+        @keyframes bg-spin {
+          to {
+            --border-angle: 1turn;
+          }
+        }
+      
+        &:hover {
+          animation-play-state: paused;
+        }
+        h1{
+            color: $text-color;
+            font-family: $font-roboto;
+            margin-bottom: 20px;
+        }
+        
+        h5{
+            color: $text-color;
+            font-family: $font-roboto;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $text-color;
+            font-family: $font-roboto;
+            margin-bottom: 20px;
+        }
+      }
+      
+      
+      h1{
+        color: $text-color;
+        font-family: $font-roboto;
+        margin-bottom: 20px;
+    }
+    h5{
+        color: $text-color;
+        font-family: $font-roboto;
+      
+    }
+    p{
+        color: $text-color;
+        font-family: $font-roboto;
+        margin-bottom: 20px;
+    }
+    .paragraph{
+        width:80%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .chencon2{
+        width: 100%;
+    }
+    .last{
+        width: 80%;
+    }
+    h2{
+        color: $text-color;
+        font-family: $font-roboto;
+        margin-bottom: 20px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        margin-top: 20px;
+       margin-left: 15%;
+      }
+      
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        color: $text-color;
+        font-family: $font-roboto;
+        text-align: center;
+        margin-top: 10px;
+        gap: 10px;
+    
+      }
+      td{
+        color: $text-color;
+        font-family: $font-roboto;
+        border: 1px solid #dddddd;
+        text-align: left;
+        text-align: center;
+        margin-top: 10px;
+       padding: 8px;
+      }
+     .texts{
+      display: flex;
+      flex-direction: row;
+      border: 1px solid #dddddd;
+      width: 48%;
+      margin-top: 20px;
+      column-gap: 20%;
+      margin-left: -8%;
+    
+     }
+     .left {
+        margin:20px
+     }
+     .right {
+      margin:20px
+    }
+    
+    .sm-bx{
+      border: 1px solid #dddddd;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      position: absolute;
+      margin-left:23% ;
+      margin-top: 1.5%;
+      display :none;
+    
+    }
+    .content {
+      padding: 12px 16px;
+     
+      height: max-content;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+      
+      color: $text-color;
+       font-family: $font-roboto;
+    }
+    ul li a{
+      font-weight: 800;
+      margin-top: 10px;
+    
+    }
+    
+    .dropdown:hover.content {
+      display: block;
+    }
+    @media only screen and (max-width: 950px){
+      .conts{
+        display: block;
+       gap: 30px;
+      }
+      h1 ,h2{
+        font-size: medium;
+      }
+      .boxs{
+        width: 100%;
+        margin-bottom: 20px;
+        // height: 10%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation: bg-spin 3s linear infinite;
+      @keyframes bg-spin {
+        to {
+          --border-angle: 1turn;
+        }
+      }
+    }
+      .chencon{
+        margin: 1%;
+        width: 350px;
+      }
+      .buttons{
+        margin-top: 2px;
+        row-gap: 0;
+      }
+      .paragraph2{
+        margin-top: 10px;
+      }
+       table{
+        width: 100%;
+        margin-left: 1%;
+        margin-right: 10%;
+       }
+       .texts{
+        display: block;
+       justify-content: center;
+       width: 80%;
+       margin-left: 11%;
+       margin-right:10%;
+        }
+    }
+}
+
 @property --border-angle {
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
 }
+
+@media (max-width:500px) {
+  .event-page{
+    .webinar{
+      align-items: center;
+      padding: 0 ;
+      justify-content: center;
+      margin: 20px;
+    }
+    
+    .box-1 {
+      display: flex;
+      flex-direction: column;
+      --border-size: 3px;
+      --border-angle: 0turn;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      background-image: conic-gradient(
+          from var(--border-angle),
+          $blue-color,
+          $blue-color 50%,
+          $blue-color
+        ),
+        conic-gradient(from var(--border-angle), transparent 20%, $gray-color, $yellow-color);
+      background-size: calc(100% - (var(--border-size) * 2))
+          calc(100% - (var(--border-size) * 2)),
+        cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    
+      animation: bg-spin 3s linear infinite;
+      @keyframes bg-spin {
+        to {
+          --border-angle: 1turn;
+        }
+      }
+    
+      &:hover {
+        animation-play-state: paused;
+      }
+      h1{
+        font-size: 20px;
+          color: $text-color;
+          font-family: $font-roboto;
+          margin-bottom: 10px;
+      }
+      h5{
+          color: $text-color;
+          font-family: $font-roboto;
+          margin-bottom: 10px;
+          font-size: 15px;
+      }
+      p{
+        font-size: 18px;
+          color: $text-color;
+          font-family: $font-roboto;
+          margin-bottom: 10px;
+      }
+      .btn-star{
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .chencon-page{
+    .conts{
+      display: block;
+     gap: 30px;
+    }
+    h1 ,h2{
+      font-size: medium;
+    }
+    .boxs{
+      width: 100%;
+      margin-bottom: 20px;
+      // height: 10%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
+  }
+    .chencon{
+      width: 200px;
+      height: 200px;
+    }
+    .buttons{
+      margin-top: 2px;
+      row-gap: 0;
+    }
+    .paragraph2{
+      margin-top: 10px;
+    }
+     table{
+      width: 100%;
+      margin-left: 1%;
+      margin-right: 10%;
+     }
+     .texts{
+      display: block;
+     justify-content: center;
+     width: 80%;
+     margin-left: 11%;
+     margin-right:10%;
+      }
+  }
+  
+      
+  }
+ 

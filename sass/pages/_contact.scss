@@ -44,15 +44,12 @@
                 width: 40%;
                height: 100vh;
                border-bottom-right-radius: 100%
-        
-        
             }
         }
         .child{
             display: flex;
             position: absolute;
             width: 30%;
-            top: 400px;
             left: 20px;
         }
         .hdn{
@@ -60,9 +57,15 @@
         }
         .cont2{
           display: flex;
+        //   width: 50%;
+          flex-direction: row;
           margin-right: 40px;
           height: 500px;
           margin-top: 40px;
+        //   flex-wrap: wrap;
+        }
+        .cont3{
+            display: none;
         }
         .child span{
           font-size: 60px;
@@ -179,7 +182,9 @@
             display: none;
         }
         .contact-page{
-            padding: 20px 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             gap: 40px;
         }
         .cont::before{
@@ -188,28 +193,128 @@
             .child span{
          visibility: hidden;
       }
-      .cont2{
-        padding: 20px 10%;
+    .cont2{
+        display: flex;
+        flex-direction: row;
+        // margin-right: 40px;
+        // gap: 20px;
+        // justify-content: space-around;
+        height: auto;
+        // flex-wrap: wrap;
+        margin: 50px ;
+      }
+      form{
         height: 500px;
+        width: 400px;
+        // width: 400px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        // margin-right: 8%;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 0px;
+        border-radius: 20px; 
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;           
+        transform: scale(0);
+        animation: zoom 0.5s ease-in-out 0.5s 1 forwards ;
+    }
       }
+      .info{
+        height: 500px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+    //   margin-right: 2%;
+      padding: 35px 0px;
+      border-radius: 20px; 
+      justify-content: center;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;           
+      transform: scale(0);
+      animation: zoom 0.5s ease-in-out 0.5s 1 forwards ;
+      h2{
+        margin-top: 20px;
       }
-    //   @media only screen and (max-width: 600px){
-    //       .hdn{
-    //           visibility:visible;
-    //           display: flex;
-    //           flex-direction: column;
-    //           font-size: 30px;
-    //            font-weight: bold;
-    //            justify-content: center;
-    //            align-items: center;
-    //           }
-    //           .cont2{
-    //               display: block;
-    //               justify-content: center;
-    //               align-items:center ;
-    //               margin: 5px;
-    //               margin-top: 150px;
-    //   }
-      
-    //   }
+  }
+
+  .info p{
+    background-color: rgb(223, 223, 228);
+    padding: 14px;
+    margin-top: 10px;
+  }
+  .icons{
+   display: flex;
+   column-gap: 10px;
+  }
+  @media (max-width:850px) {
+    .contact-page{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+    .cont2{
+        height: auto;
+        display: block;
+        width: 100%;
+        padding: 0 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        margin-top: 50px;
+    }
+    
+  }
+  @media (max-width:600px) {
+    .cont{
+        margin: 0;
+    }
+    .cont2{
+        width: auto;
+        padding: 5% 40px;
+        margin: 0;
+    }
+    .info{
+        padding: 30px;
+        width: auto;
+    }
+    form{
+        padding: 30px;
+        width: auto;
+    }
+  }
+  @media (max-width:500px) {
+    .contact-page{
+        margin-right: 0;
+        padding: 0;
+    }
+    .cont2{
+        display: none;
+    }
+    .cont3{
+        // padding: 20px;
+        display: block;
+        // width: 90%;
+        margin-right: 0;
+        margin: 40px 0px;
+        .info{
+            height: auto;
+            margin-right: 0;
+        }
+        form{
+            height: auto;
+            margin-right: 0;
+            input, button{
+                padding: 10px;
+                width: 200px;
+            }
+        }
+    }
+    
+   
+  }
+
+
 }

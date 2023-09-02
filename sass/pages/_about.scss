@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
    .con1{
     align-items: center;
         // margin: 20px 5%;
@@ -38,8 +39,6 @@
             border: 2px solid $gold-color;
             box-shadow: 1px 1px 10px $yellow-color;
             background-color: $blue-color;
-            
-            box-shadow: 1px 1px 100px $yellow-color inset;
             h1{
                 color: $text-color;
                 font-size: 30px;
@@ -166,6 +165,61 @@
 
 @media (max-width:700px) {
   .about-page{
+    width: 100%;
+    .con1{
+      width: 90%;
+      padding: 0;
+      margin: 0;
+      .main-png{
+        width: 200px;
+      }
+      .con-1{
+        width: auto;
+        padding: 20px;
+        margin: 0;
+        border-radius: 20px;
+        border: 2px solid $gold-color;
+        box-shadow: 1px 1px 10px $yellow-color;
+        background-color: $blue-color;
+        h1{
+            color: $text-color;
+            font-size: 20px;
+        }
+        h5{
+            margin-top: 10px;
+            color: $text-color;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: lighter;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+    
+  }
+  .con2{
+    margin-top: 50px;
+    width: 90%;
+    color: $text-color;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px $gray-color;
+    border-radius: 10px;
+    .con-2{
+        // display: flex;
+        // flex-direction: row;
+        .extra{
+          font-size: 2px;
+        }
+        p{
+            margin-top: 5px;
+            color: $text-color;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: $font-roboto;
+        }
+    }
+}
         .con3{
             .con-3{
                 flex-direction: column;
@@ -269,15 +323,12 @@
         font-size: 22px;
       }
       .num-text{
-        font-size: 12px;
+        font-size: 18px;
       }
     }
     @media (max-width:460px) {
       .number-field{
         font-size: 14px;
-      }
-      .num-text{
-        font-size: 10px;
       }
       .num-con{
         width: 50px;
@@ -286,9 +337,6 @@
     @media (max-width:300px) {
       .number-field{
         font-size: 22px;
-      }
-      .num-text{
-        font-size: 16px;
       }
       .num-con{
         width: 80px;
