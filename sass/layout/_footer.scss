@@ -2,18 +2,17 @@
 
 footer{
     padding: 30px;
-    height: 50vh;
     width: 100%;
     background: black;
     border-top: 2px solid white;
-    
     display: flex;
     justify-content: space-around;
     h1{
         line-height: 50px;
         font-weight: bolder;
-        color: $yellow-color;
+        color: white;
         font-size: 25px;
+
     }
     h5{
 
@@ -30,14 +29,19 @@ footer{
     }
    
 }
-.links{
+.links a{
 display: flex;
  flex-direction: column;
+ color:$yellow-color;
+ line-height: 30px;
+ text-align: center;
 
 }
 
 .copy-rights-text{
     margin-left:40%;
+    color: aliceblue;
+    justify-content: center;
 }
 .copy-rights{
     display: flex;
@@ -51,6 +55,73 @@ display: flex;
     
     border-top: 2px solid $yellow-color;
 }
+@media(max-width:880px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;    
+        justify-content: center;
+    
+        
+    }
+    .h1{
+        text-align: center ;
+        justify-content: center;
+    }
+}
+
+
+// footer{
+//     padding: 30px;
+//     height: 50vh;
+//     width: 100%;
+//     background: black;
+//     border-top: 2px solid white;
+    
+//     display: flex;
+//     justify-content: space-around;
+//     h1{
+//         line-height: 50px;
+//         font-weight: bolder;
+//         color: $yellow-color;
+//         font-size: 25px;
+//     }
+//     h5{
+
+//         margin-top: 10px;
+//         font-weight: lighter;
+//         color:$yellow-color;
+//         font-size: 20px;
+//         line-height: 3cap;
+//     }
+//     a{
+//         font-size: 20px;
+//         line-height: 30px;
+      
+//     }
+   
+// }
+// .links{
+// display: flex;
+//  flex-direction: column;
+
+// }
+
+// .copy-rights-text{
+//     margin-left:40%;
+// }
+// .copy-rights{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 30px;
+//     padding-right: 80px;
+//     background: black;
+//     color: $text-color;
+    
+//     border-top: 2px solid $yellow-color;
+// }
 
 // footer{
 //     padding: 30px;

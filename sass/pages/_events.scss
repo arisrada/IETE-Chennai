@@ -18,6 +18,13 @@
 
 
 .event-page{
+  .webinar{
+    align-items: center;
+    padding: 0 20%;
+    justify-content: center;
+    margin: 20px;
+  }
+  
   .box-1 {
     display: flex;
     flex-direction: column;
@@ -27,12 +34,12 @@
     padding: 40px;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    // margin-top: 60px;
     background-image: conic-gradient(
         from var(--border-angle),
-        black,
-        black 50%,
-        black
+        $blue-color,
+        $blue-color 50%,
+        $blue-color
       ),
       conic-gradient(from var(--border-angle), transparent 20%, $gray-color, $yellow-color);
     background-size: calc(100% - (var(--border-size) * 2))

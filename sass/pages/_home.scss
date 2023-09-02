@@ -27,11 +27,9 @@
     background-size: cover;
     display: flex;
     flex-direction: row;
-    opacity: 0.77;
     color: $text-color;
     justify-content: space-around;
-    align-items: last baseline;
-    
+    align-items: last baseline; 
 }
 
 .box1 {
@@ -40,7 +38,7 @@
 	margin: max(1rem, 3vw);
 	border: 0.15rem solid;
   background-color: $text-color;
-  opacity: 0.8;
+  opacity: 0.77;
 	padding: 3vw;
   color: $blue-color;
     p{
@@ -65,11 +63,6 @@
         font-size: 25px;
     }
 }
-
-// .box1:hover, .box2:hover{
-//     border-image: conic-gradient(from var(--angle), var(--c1), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c1) 0.25turn) 30;
-//     // color: var(--c1);
-// }
 
 @keyframes borderRotate {
 	100% {
@@ -113,7 +106,6 @@
     line-height: 30px;
     h1{
         line-height: 40px;
-        // font-weight: bolder;
         color: $text-color;
         font-size: 28px;
         font-family: sans-serif;
@@ -135,29 +127,6 @@
         margin-top: 30px;
       }
     
-  }
-
-  @media (max-width:700px) {
-    .wrapper{
-      h1{
-        line-height: 50px;
-        font-weight: bolder;
-        color: $blue-color;
-        font-size: 35px;
-    }
-    h5{
-        margin-top: 10px;
-        margin-left: 30px;
-        color: $gray-color;
-        font-size: 20px;
-    }
-    p{
-        margin-top: 20px;
-        font-size: 25px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 35px;
-    }
-    }
   }
 
   .wrapper:hover{
@@ -182,61 +151,6 @@
     border-radius: 50%;
   }
 
-// .anim1::before{
-//     animation: anim 30s infinite;
-// 	background: $blue-grad1-color;
-// 	border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
-// 	content: "";
-// 	height: 30vmin;
-// 	position: absolute;
-// 	width: 30vmin;
-//     top: 530px;
-//     left: 45%;
-//     z-index: 11;
-// }
-
-// @keyframes anim {
-// 	0%,
-// 	100% {
-// 		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
-// 	}
-
-// 	10% {
-// 		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
-// 	}
-
-// 	20% {
-// 		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
-// 	}
-
-// 	30% {
-// 		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
-// 	}
-
-// 	40% {
-// 		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
-// 	}
-
-// 	50% {
-// 		border-radius: 100%;
-// 	}
-
-// 	60% {
-// 		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
-// 	}
-
-// 	70% {
-// 		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
-// 	}
-
-// 	80% {
-// 		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
-// 	}
-
-// 	90% {
-// 		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
-// 	}
-// }
 }
 
 @property --angle {

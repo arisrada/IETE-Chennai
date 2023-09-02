@@ -21,8 +21,10 @@
         }
     }
     &_head{
+        align-items: center;
         display: flex;
         gap: 20px;
+        padding: 0;
         a{
             font-weight: 600;
             font-family: sans-serif;
@@ -30,6 +32,61 @@
     }
     .fa{
         display: none;
+       }
+       .drop-down1{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1000;
+        .drop1{
+            position: absolute;
+            background-color: $blue-color;
+            box-shadow: 1px 1px 10px $text-color;
+            min-width: 100px;
+            top: 20px;
+            display: none;
+        }
+        &:hover .drop1{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+        }
+        .drop1{
+            a{
+                border: none;
+            }
+        }
+       }
+       .drop-down2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1000;
+        .drop2{
+            position: absolute;
+            background-color: $blue-color;
+            box-shadow: 1px 1px 10px $text-color;
+            padding: 0 16px;
+            min-width: 100px;
+            top: 20px;
+            display: none;
+        }
+        &:hover .drop2{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+        }
+        .drop2{
+            a{
+                border: none;
+            }
+        }
        }
 }
 
