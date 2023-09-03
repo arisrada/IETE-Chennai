@@ -2,7 +2,7 @@
 
 
 .header{
-    position: sticky;
+   
     align-items: center;
     text-align: center;
     background-color: $blue-color;
@@ -108,8 +108,8 @@
   .side_nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    
+    font-size: 20px;
+    line-height: 18px;
     display: block;
     transition: 0.3s;
   
