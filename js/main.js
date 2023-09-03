@@ -22,10 +22,28 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+
+
+// animation 1//
+var i = 0;
+var txt1 = "Chennai Centre of IETE is committed to attain commanding heights and achieve the status of 'Centre of Excellence' in Technical, Engineering & Management education by harnessing the best practices in educational innovation and through its concerted endeavors like quality teaching, industrial consultancy and training to the aspirants including corporate training.";
+var speed1 = 10;
+
+// Call the typeWriter function when the page loads
+window.onload = function() {
+  typeWriter();
+};
+
+function typeWriter() {
+  if (i < txt1.length) {
+    document.getElementById("demo1").innerHTML += txt1.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed1);
+  }
+}
 
 //number count
 function animateNumber(target, finalValue, duration) {
@@ -61,3 +79,4 @@ const observer = new IntersectionObserver(checkIfVisible, { root: null, rootMarg
 const countdownContainer = document.getElementById("countdownContainer");
 
 observer.observe(countdownContainer);
+

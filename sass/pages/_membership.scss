@@ -20,9 +20,18 @@
 .membership-page{
     .member-con{
         width: 100%;
+        align-items: center;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    @media (max-width:700px) {
+      .member-con{
         display: flex;
-        flex-direction: column;
-        
+      flex-direction: column;
+      justify-content: center;
+      }
+      
     }
     .mem-con1{
         margin-top: 10px;
@@ -68,8 +77,8 @@
             padding: 20px;
             overflow: hidden;
             // perspective: 1000px;
-            border-top: 2px solid;
-            box-shadow: 0 3px 2px $text-color;
+            border-top: 2px solid $yellow-color;
+            box-shadow: 0 3px 2px $yellow-color;
             font-family: $font-roboto;
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             .mem-con2{

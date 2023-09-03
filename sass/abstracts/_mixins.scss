@@ -5,7 +5,7 @@
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    background: $blue-color;
+    background: $yellow-color;
     border: none;
     color: white;
     text-decoration: none;
@@ -17,6 +17,7 @@
     padding: 15px;
     border-radius: 50%;
     z-index: 99;
+    
 }
 
 @mixin btn-hover{
@@ -25,7 +26,7 @@
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    background: $yellow-color;
+    background: $gold-color;
     border: none;
     border-radius: 50%;
     color: white;

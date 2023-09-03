@@ -4,6 +4,9 @@
 /* buttons */
 @use "../components/buttons" as *;
 
+/* animations */
+@use "../components/animations" as *;
+
 /* variables */
 @use "../abstracts/variables" as *;
 
@@ -323,7 +326,7 @@
         font-size: 22px;
       }
       .num-text{
-        font-size: 18px;
+        font-size: 15px;
       }
     }
     @media (max-width:460px) {

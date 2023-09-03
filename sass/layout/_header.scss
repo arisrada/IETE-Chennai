@@ -2,6 +2,7 @@
 
 
 .header{
+    position: sticky;
     align-items: center;
     text-align: center;
     background-color: $blue-color;
@@ -37,7 +38,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        z-index: 1000;
+        z-index: 1000000000000;
         .drop1{
             position: absolute;
             background-color: $blue-color;

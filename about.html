@@ -7,13 +7,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./src/css/main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div>
         <nav class="header">
             <div class="header_logo">
                 <p style="font-weight: bold; font-size: 20px;">IETE</p>
-                <p style="font-size: 13px;">The Institution of Electronics and <br> Telecommunication Engineers, Chennai</p>
+                <p style="font-size: 13px;">The Institution of Electronics and Telecommunication Engineers, Chennai</p>
             </div>
             <div class="header_head">
                 <a href="./index.html" >Home</a>
@@ -22,7 +23,7 @@
                 <a href="./events.html">Events</a>
                 <a href="./membership.html">Membership</a>
                 <div class="drop-down1">
-                  <a href="./chencon.html">Chencon
+                  <a href="#">Chencon
                     <div class="drop1">
                       <a href="./chencon.html">2022</a>
                       <a href="http://ietechennai.in/assets/pdf/chencon2021_proceedings.pdf">2021</a>
@@ -30,7 +31,7 @@
                   </a>
                 </div>
                 <div class="drop-down2">
-                  <a href="./chenlink_newsletter.html">Chenlink Newsletter
+                  <a href="#">Chenlink Newsletter
                     <div class="drop2">
                       <a href="http://ietechennai.in/assets/pdf/chenlink1_3.pdf">Vol. 1, No.3</a>
                       <a href="http://ietechennai.in/assets/pdf/chenlink1_2.pdf">Vol. 1, No.2</a>
@@ -47,8 +48,23 @@
                 <a href="./executive_committee.html">Executive Committee</a>
                 <a href="./events.html">Events</a>
                 <a href="./membership.html">Membership</a>
-                <a href="./chencon.html">Chencon</a>
-                <a href="./chenlink_newsletter.html">Chenlink Newsletter</a>
+                <div class="drop-down1">
+                  <a href="#">Chencon
+                    <div class="drop1">
+                      <a href="./chencon.html">2022</a>
+                      <a href="http://ietechennai.in/assets/pdf/chencon2021_proceedings.pdf">2021</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="drop-down2">
+                  <a href="#">Chenlink Newsletter
+                    <div class="drop2">
+                      <a href="http://ietechennai.in/assets/pdf/chenlink1_3.pdf">Vol. 1, No.3</a>
+                      <a href="http://ietechennai.in/assets/pdf/chenlink1_2.pdf">Vol. 1, No.2</a>
+                      <a href="http://ietechennai.in/assets/pdf/chenlink1_1.pdf">Vol. 1, No.1</a>
+                    </div>
+                  </a>
+                </div>
                 <a href="./contact.html">Contact</a>
             </div>
             <i class="fa fa-bars" onclick="openNav()" style="font-size:36px"></i>
@@ -56,9 +72,10 @@
         <button onclick="topFunction()" class="btn1 btn2" id="myBtn" title="Go to top"><img src="./images/up-arrow.png" alt="up"></button>
         <main class="about-page">
             <div class="con1">
-                <div class="con-1">
-                    <h1 class="word1">IETE</h1>
-                    <h5>Founded in 1953, the Institution of Electronics and Telecommunication Engineers (IETE) is a leading professional society. 
+                <div class="con-1" data-aos="zoom-in-left">
+                    <h1 class="word1" >IETE</h1>
+                    <h5 >
+                      Founded in 1953, the Institution of Electronics and Telecommunication Engineers (IETE) is a leading professional society. 
                         Its vision is to reach the unreached and empower the youth through Technical Education and Skill development with a Mission 
                         for Advancement of Electronics, Telecommunication, Information Technology & other related disciplines; to contribute in Nation's 
                         Human Resource & Infrastructure Development through our Engineers & Scientists. The Government of India, Ministry of Science and 
@@ -68,11 +85,12 @@
                         head of IETE Secretariat as Chief Executive. The Institution is managed through various Committees and Boards nominated by the 
                         Governing Council. The 63 Centers are spread all over India 02 abroad and are managed by respective Executive Committees. 
                         To keep pace with technological development and achieve the mission, it organizes conferences, conventions, symposia, seminars, 
-                        workshops, publications and brain storming sessions for continued knowledge upgradation of its members.</h5>
+                        workshops, publications and brain storming sessions for continued knowledge upgradation of its members.
+                      </h5>
                 </div>
-                <img src="./images/dis4.png" alt="discussion" class="main-png">
+                <img src="./images/dis4.png" alt="discussion" class="main-png" data-aos="fade-up-right" >
             </div>
-            <div class="con2">
+            <div class="con2" data-aos="fade-up-right">
                 <h1 class="word1">Chennai Center</h1>
                 <div class="con-2">
                     <p>Chennai Centre of IETE is committed to attain commanding heights and achieve the status of “Centre of Excellence” in Technical, 
@@ -86,7 +104,7 @@
                 </div>
                 
             </div>
-            <div class="con3">
+            <div class="con3"  data-aos="fade-up-right">
                 <h1 class="word1">Goals:</h1>   
                 <div class="con-3">
                 <p><b>Vission: </b>Reaching the un-reached and empowering the youth through Technical Education and Skill Development.</p>
@@ -96,7 +114,7 @@
                     One of the missions of IETE is to provide the best mode of studying a Btech degree programme. </p>
                 </div>    
             </div>
-            <div class="con4" id="countdownContainer">
+            <div class="con4" id="countdownContainer"  data-aos="fade-down-right">
                 <div class="num-card">
                   <div class="num-con">
                     <div class="number-field" id="number1">0</div>
@@ -118,8 +136,8 @@
             </div>
             <div class="con5">
               <h1>List Of Colleges</h1>
-              <div class="con-5">
-                  <div class="container noselect">
+              <div class="con-5" >
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -152,7 +170,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -185,7 +203,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -218,7 +236,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -251,7 +269,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -284,7 +302,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -317,7 +335,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -350,7 +368,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -383,7 +401,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -416,7 +434,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -449,7 +467,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -482,7 +500,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -515,7 +533,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -548,7 +566,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="container noselect">
+                  <div class="container noselect" data-aos="flip-up">
                       <div class="canvas">
                         <div class="tracker tr-1"></div>
                         <div class="tracker tr-2"></div>
@@ -612,5 +630,9 @@
         </div>
     </div>
     <script src='./js/main.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

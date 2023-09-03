@@ -32,7 +32,7 @@ body {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  background: white;
+  background: #bd9204;
   border: none;
   color: white;
   text-decoration: none;
@@ -51,7 +51,7 @@ body {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  background: #bd9204;
+  background: #f9b234;
   border: none;
   border-radius: 50%;
   color: white;
@@ -197,9 +197,27 @@ body {
   z-index: 2;
 }
 
+/* animations */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.scroll-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* text */
 /* variables */
 /* header */
 .header {
+  position: sticky;
   align-items: center;
   text-align: center;
   background-color: white;
@@ -236,7 +254,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 1000;
+  z-index: 1000000000000;
 }
 .header .drop-down1 .drop1 {
   position: absolute;
@@ -466,7 +484,6 @@ footer a {
 }
 
 .copy-rights-text {
-  margin-left: 40%;
   color: aliceblue;
   justify-content: center;
 }
@@ -476,8 +493,7 @@ footer a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
-  padding-right: 80px;
+  padding: 10px 70px;
   background: black;
   color: black;
   border-top: 2px solid #bd9204;
@@ -490,9 +506,35 @@ footer a {
     text-align: center;
     justify-content: center;
   }
-  .h1 {
+  footer h1 {
+    line-height: 30px;
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
+    margin-top: 10px;
+  }
+  footer h5 {
+    margin-top: 10px;
+    font-weight: lighter;
+    color: #bd9204;
+    font-size: 15px;
+    line-height: 3cap;
+  }
+  footer a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .copy-rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: black;
+    color: black;
+    border-top: 2px solid #bd9204;
   }
 }
 .home-page .parallax {
@@ -669,6 +711,7 @@ footer a {
 /* about page */
 /* reset */
 /* buttons */
+/* animations */
 /* variables */
 /* header */
 /* grid */
@@ -1218,7 +1261,7 @@ footer a {
     font-size: 22px;
   }
   .num-card .num-text {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media (max-width: 460px) {
@@ -1284,6 +1327,7 @@ footer a {
   background-color: white;
   border-radius: 10px;
   display: flex;
+  z-index: -30;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1359,19 +1403,42 @@ footer a {
   animation-play-state: paused;
 }
 .event-page .box-1 h1 {
+  font-size: 20px;
   color: black;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .event-page .box-1 h5 {
+  font-size: 15px;
   color: black;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
 }
 .event-page .box-1 p {
+  font-size: 18px;
   color: black;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+@media (max-width: 700px) {
+  .event-page .box-1 h1 {
+    font-size: 20px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+  }
+  .event-page .box-1 h5 {
+    font-size: 15px;
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+  }
+  .event-page .box-1 p {
+    font-size: 18px;
+    color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 10px;
+  }
 }
 
 .chencon-page {
@@ -1683,8 +1750,17 @@ footer a {
 /* footer */
 .membership-page .member-con {
   width: 100%;
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .membership-page .member-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .membership-page .mem-con1 {
   margin-top: 10px;
@@ -1722,8 +1798,8 @@ footer a {
   justify-content: center;
   padding: 20px;
   overflow: hidden;
-  border-top: 2px solid;
-  box-shadow: 0 3px 2px black;
+  border-top: 2px solid #bd9204;
+  box-shadow: 0 3px 2px #bd9204;
   font-family: "Roboto", sans-serif;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -1798,23 +1874,29 @@ footer a {
   animation-play-state: paused;
 }
 .chencon-page .boxs h1 {
+  font-size: 20px;
   color: black;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .chencon-page .boxs h5 {
+  font-size: 15px;
   color: black;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
 }
 .chencon-page .boxs p {
+  font-size: 18px;
   color: black;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+.chencon-page .boxs .btn-star {
+  margin: 5px;
 }
 .chencon-page h1 {
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-bottom: 20px;
 }
 .chencon-page h5 {
@@ -1822,9 +1904,10 @@ footer a {
   font-family: "Roboto", sans-serif;
 }
 .chencon-page p {
+  font-size: 18px;
   color: black;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10px;
 }
 .chencon-page .paragraph {
   width: 80%;

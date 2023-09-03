@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./src/css/main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div>
@@ -22,7 +23,7 @@
                 <a href="./events.html">Events</a>
                 <a href="./membership.html" class="active">Membership</a>
                 <div class="drop-down1">
-                    <a href="./chencon.html">Chencon
+                    <a href="#">Chencon
                       <div class="drop1">
                         <a href="./chencon.html">2022</a>
                         <a href="http://ietechennai.in/assets/pdf/chencon2021_proceedings.pdf">2021</a>
@@ -30,7 +31,7 @@
                     </a>
                   </div>
                   <div class="drop-down2">
-                    <a href="./chenlink_newsletter.html">Chenlink Newsletter
+                    <a href="#">Chenlink Newsletter
                       <div class="drop2">
                         <a href="http://ietechennai.in/assets/pdf/chenlink1_3.pdf">Vol. 1, No.3</a>
                         <a href="http://ietechennai.in/assets/pdf/chenlink1_2.pdf">Vol. 1, No.2</a>
@@ -47,8 +48,23 @@
                 <a href="./executive_committee.html">Executive Committee</a>
                 <a href="./events.html">Events</a>
                 <a href="./membership.html" class="active">Membership</a>
-                <a href="./chencon.html">Chencon</a>
-                <a href="./chenlink_newsletter.html">Chenlink Newsletter</a>
+                <div class="drop-down1">
+                  <a href="#">Chencon
+                    <div class="drop1">
+                      <a href="./chencon.html">2022</a>
+                      <a href="http://ietechennai.in/assets/pdf/chencon2021_proceedings.pdf">2021</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="drop-down2">
+                  <a href="#">Chenlink Newsletter
+                    <div class="drop2">
+                      <a href="http://ietechennai.in/assets/pdf/chenlink1_3.pdf">Vol. 1, No.3</a>
+                      <a href="http://ietechennai.in/assets/pdf/chenlink1_2.pdf">Vol. 1, No.2</a>
+                      <a href="http://ietechennai.in/assets/pdf/chenlink1_1.pdf">Vol. 1, No.1</a>
+                    </div>
+                  </a>
+                </div>
                 <a href="./contact.html">Contact</a>
             </div>
             <i class="fa fa-bars" onclick="openNav()" style="font-size:36px"></i>
@@ -56,15 +72,24 @@
         <button onclick="topFunction()" class="btn1 btn2" id="myBtn" title="Go to top"><img src="./images/up-arrow.png" alt="up"></button>
         <main class="membership-page">
           <div class="member-con">
-            <h1 class="mem-con1">Why join us?</h1>
-            <p class="mem-para1">IETE Student Forum arranges frequent meetings of student members together with experts / academic / R & D / industry leaders as well as IETE centre’s executive committee members. Programmers of common interest may also be arranged involving students forum at many institutions in a city, region etc. Students after completeing their degrees will become proud corporate members of IETE and can write after their name BE. AMIETE, with less fees <br>(deducting the fee paid for the forum).</br></p>
+            <div class="con1" >
+              <h1 class="mem-con1">Why join us?</h1>
+            <p class="mem-para1" id="demo1">
+              <!-- IETE Student Forum arranges frequent meetings of student members together with experts / academic / R & D / industry leaders as well as IETE centre’s executive committee members. Programmers of common interest may also be arranged involving students forum at many institutions in a city, region etc. Students after completeing their degrees will become proud corporate members of IETE and can write after their name BE. AMIETE, with less fees (deducting the fee paid for the forum). -->
+            </br></p>
+            </div>
+            <div class="con2" >
+              <img src="./images/dis2.png" alt="why" width="400px" height="400px"  data-aos="fade-up-right">
+            </div>
+            
           </div>
+          
             <div class="container1">
-                <div class="card">
+                <div class="card" >
                    <h1 class="mem-con2">MEMBERSHIP</h1>
                     <p class="mem-para2">The IETE membership is available at different levels based on the applicants' academic qualifications and practical experience in electronics, telecommunications, computers, information technology and related areas. Applicants are invited to seek the highest membership grade they are qualified for. The membership categories are:</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-up">
                     <h1 class="mem-con2">Corporate Members:</h1>
                      <p class="mem-para2" style="display: flex; flex-direction: column; line-height: 30px;" >
                          1.Honorary fellow (HF) (elected),
@@ -78,7 +103,7 @@
                     
                         </p>
                  </div>
-                 <div class="card" style="padding: 20px;">
+                 <div class="card" style="padding: 20px;" data-aos="flip-up">
                     <h1 class="mem-con2" style="font-size: medium;">Non-Corporate Members:</h1>
                     <p class="mem-para2" style="display: flex; flex-direction: column; line-height: 30px;" >
                         6. Associate (A),
@@ -93,7 +118,7 @@
                        <span>
                        </p>
                  </div>
-                 <div class="card">
+                 <div class="card" data-aos="zoom-in-right">
                     <h1 class="mem-con2">Click on the link to access the forms:</h1>
                     <p class="mem-para2" style="display: flex; flex-direction: column; line-height: 30px;">
                         <a href="https://iete.org/IETE1_CORPUP.pdf">1.Corporate Member </a>
@@ -136,5 +161,27 @@
 </div>
     </div>
     <script src='./js/main.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var i = 0;
+var txt1 = "IETE Student Forum arranges frequent meetings of student members together with experts / academic / R & D / industry leaders as well as IETE centre's executive committee members. Programmers of common interest may also be arranged involving students forum at many institutions in a city, region etc. Students after completeing their degrees will become proud corporate members of IETE and can write after their name BE. AMIETE, with less fees (deducting the fee paid for the forum).";
+var speed1 = 10;
+
+window.onload = function() {
+  typeWriter();
+};
+
+function typeWriter() {
+  if (i < txt1.length) {
+    document.getElementById("demo1").innerHTML += txt1.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed1);
+  }
+}
+
+    </script>
 </body>
 </html>
